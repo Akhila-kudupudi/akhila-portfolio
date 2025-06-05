@@ -4,52 +4,50 @@ const skillsData = [
   {
     category: 'Languages & Scripting',
     skills: [
-      { name: 'Python', logo: '/python.webp' },
-      { name: 'SQL', logo: '/ssms.png' },
-      { name: 'R', logo: '/r.jpeg' },
-      { name: 'Shell Scripting', logo: '/shell.jpeg' },
-      { name: 'Unix', logo: '/Unix.png' }, 
-      { name: 'HTML', logo: '/html.png' },
-      { name: 'JavaScript', logo: '/JavaScript.webp' },
-
+      { name: 'Python', logo: `${process.env.PUBLIC_URL}/python.webp` },
+      { name: 'SQL', logo: `${process.env.PUBLIC_URL}/ssms.png` },
+      { name: 'R', logo: `${process.env.PUBLIC_URL}/r.jpeg` },
+      { name: 'Shell Scripting', logo: `${process.env.PUBLIC_URL}/shell.jpeg` },
+      { name: 'Unix', logo: `${process.env.PUBLIC_URL}/Unix.png` },
+      { name: 'HTML', logo: `${process.env.PUBLIC_URL}/html.png` },
+      { name: 'JavaScript', logo: `${process.env.PUBLIC_URL}/JavaScript.webp` },
     ],
   },
   {
     category: 'Tools & Platforms',
     skills: [
-      { name: 'AWS Neptune', logo: '/neptune.png' },
-      { name: 'Neo4j', logo: '/neo4j.png' },
-      { name: 'Tableau', logo: '/tableau.png' },
-      { name: 'Power BI', logo: '/powerbi.png' },
-      { name: 'Azure DevOps', logo: '/azure.png' },
-      { name: 'GitHub', logo: '/github.png' },
-      { name: 'Google Colab', logo: '/colab.webp' },
-      { name: 'VS Code', logo: '/vscode.jpeg' },
-      { name: 'Putty', logo: '/putty.png' },
-      { name: 'Databricks', logo: '/databricks.png' },
-
+      { name: 'AWS Neptune', logo: `${process.env.PUBLIC_URL}/neptune.png` },
+      { name: 'Neo4j', logo: `${process.env.PUBLIC_URL}/neo4j.png` },
+      { name: 'Tableau', logo: `${process.env.PUBLIC_URL}/tableau.png` },
+      { name: 'Power BI', logo: `${process.env.PUBLIC_URL}/powerbi.png` },
+      { name: 'Azure DevOps', logo: `${process.env.PUBLIC_URL}/azure.png` },
+      { name: 'GitHub', logo: `${process.env.PUBLIC_URL}/github.png` },
+      { name: 'Google Colab', logo: `${process.env.PUBLIC_URL}/colab.webp` },
+      { name: 'VS Code', logo: `${process.env.PUBLIC_URL}/vscode.jpeg` },
+      { name: 'Putty', logo: `${process.env.PUBLIC_URL}/putty.png` },
+      { name: 'Databricks', logo: `${process.env.PUBLIC_URL}/databricks.png` },
     ],
   },
   {
     category: 'Databases & Reporting',
     skills: [
-      { name: 'Oracle SQL Developer', logo: '/oracle-sql.png' },
-      { name: 'Microsoft Excel', logo: '/excel.png' },
-      { name: 'IBM Cognos', logo: '/ibm cognos.png' },
-      { name: 'MongoDB', logo: '/mongodb.png' },
-      { name: 'PostgreSQL', logo: '/postgre.png' },
-      { name: 'SSMS',logo: '/ssms.png'}, 
+      { name: 'Oracle SQL Developer', logo: `${process.env.PUBLIC_URL}/oracle-sql.png` },
+      { name: 'Microsoft Excel', logo: `${process.env.PUBLIC_URL}/excel.png` },
+      { name: 'IBM Cognos', logo: `${process.env.PUBLIC_URL}/ibm cognos.png` },
+      { name: 'MongoDB', logo: `${process.env.PUBLIC_URL}/mongodb.png` },
+      { name: 'PostgreSQL', logo: `${process.env.PUBLIC_URL}/postgre.png` },
+      { name: 'SSMS', logo: `${process.env.PUBLIC_URL}/ssms.png` },
     ],
   },
   {
     category: 'Dev & Agile Tools',
     skills: [
-      { name: 'JIRA', logo: '/jira.svg' },
-      { name: 'Confluence', logo: '/confluence.png' },
-      { name: 'ServiceNow', logo: '/servicenow.png' },
-      { name: 'Agile', logo: '/agile.png' },
-      { name: 'Slack', logo: '/slack.png' },
-      { name: 'Microsoft Teams', logo: '/teams.jpeg' },
+      { name: 'JIRA', logo: `${process.env.PUBLIC_URL}/jira.svg` },
+      { name: 'Confluence', logo: `${process.env.PUBLIC_URL}/confluence.png` },
+      { name: 'ServiceNow', logo: `${process.env.PUBLIC_URL}/servicenow.png` },
+      { name: 'Agile', logo: `${process.env.PUBLIC_URL}/agile.png` },
+      { name: 'Slack', logo: `${process.env.PUBLIC_URL}/slack.png` },
+      { name: 'Microsoft Teams', logo: `${process.env.PUBLIC_URL}/teams.jpeg` },
     ],
   },
 ];
@@ -59,7 +57,8 @@ const Skills = () => (
     <div className="max-w-6xl w-full">
       <h2 className="text-3xl font-bold text-blue-700 mb-4 text-center">Skills</h2>
       <p className="text-md text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-        A well-rounded set of technical skills across data engineering, DevOps, cloud platforms, visualization tools, and agile practices. Here’s a categorized snapshot of what I work with:
+        A well-rounded set of technical skills across data engineering, DevOps, cloud platforms, visualization tools,
+        and agile practices. Here’s a categorized snapshot of what I work with:
       </p>
 
       {skillsData.map((group) => (

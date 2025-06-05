@@ -9,7 +9,12 @@ const Experience = () => (
       {/* TCS Experience */}
       <div className="mb-10">
         <div className="flex items-center gap-4 mb-4">
-          <img src="/TCS.jpeg" alt="Tata Consultancy Services Logo" className="h-12 w-auto object-contain" />
+          <img
+  src={`${process.env.PUBLIC_URL}/TCS.jpeg`}
+  alt="Tata Consultancy Services Logo"
+  className="h-12 w-auto object-contain"
+/>
+
           <div>
             <h3 className="text-xl font-semibold text-gray-800">DevOps Engineer</h3>
             <p className="text-gray-600">Tata Consultancy Services (TCS) • Aug 2021 – Aug 2023</p>
@@ -29,7 +34,12 @@ const Experience = () => (
       {/* Woolworths Client Project */}
       <div className="mb-10">
         <div className="flex items-center gap-4 mb-4">
-          <img src="/woolworths.jpeg" alt="Woolworths Client Logo" className="h-12 w-auto object-contain" />
+          <img
+  src={`${process.env.PUBLIC_URL}/woolworths.jpeg`}
+  alt="Woolworths Client Logo"
+  className="h-12 w-auto object-contain"
+/>
+
           <div>
             <h3 className="text-xl font-semibold text-gray-800">Client Project – Logistics Support</h3>
             <p className="text-gray-600">Woolworths (Australia & New Zealand)</p>

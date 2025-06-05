@@ -14,10 +14,10 @@ const Publications = () => {
         <div className="bg-gray-100 shadow-lg rounded-lg p-8 flex flex-col md:flex-row gap-8 items-center">
           {/* Thumbnail */}
           <img
-            src="/Info_bridge.jpeg"
-            alt="InfoTech Assistant"
-            className="w-72 h-auto rounded-md shadow-md object-cover"
-          />
+  src={`${process.env.PUBLIC_URL}/Info_bridge.jpeg`}
+  alt="InfoTech Assistant"
+  className="w-72 h-auto rounded-md shadow-md object-cover"
+/>
 
           {/* Content */}
           <div className="flex-1">

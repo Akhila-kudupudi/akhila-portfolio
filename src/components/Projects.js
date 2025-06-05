@@ -6,7 +6,7 @@ const projects = [
     description:
       "AI-powered chatbot for IT web portal queries with NLP and multimodal interfaces.",
     technologies: ["NLP", "Multimodal Interfaces", "Conversation Handling"],
-    image: "/Info_bridge.jpeg",
+    image: `${process.env.PUBLIC_URL}/Info_bridge.jpeg`,
     repo: "https://github.com/Akhila-kudupudi/Infotech-Chatbot",
   },
   {
@@ -14,7 +14,7 @@ const projects = [
     description:
       "Graph-based exploration of corporate linkages in fentanyl trafficking.",
     technologies: ["AWS Neptune", "Neo4j", "Tableau", "Gremlin", "Cypher"],
-    image: "/Fentanyl.jpeg",
+    image: `${process.env.PUBLIC_URL}/Fentanyl.jpeg`,
     repo: "https://github.com/Akhila-kudupudi/Akhila-kudupudi-Augment-Linkage-Fentanyl-Networks--Public",
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     description:
       "Data cleaning, EDA, and ML on car crash data using PySpark and MongoDB.",
     technologies: ["PySpark", "MongoDB", "Tableau"],
-    image: "/car-crash.avif",
+    image: `${process.env.PUBLIC_URL}/car-crash.avif`,
     repo: "https://github.com/Akhila-kudupudi/Car-Crash-Analysis-pipeline",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     description:
       "Predicting and classifying house prices with ML models.",
     technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
-    image: "/Housing.webp",
+    image: `${process.env.PUBLIC_URL}/Housing.webp`,
     repo: "https://github.com/Akhila-kudupudi/Machine-Learning-on-Boston-Housing-Dataset",
   },
   {
@@ -38,13 +38,13 @@ const projects = [
     description:
       "Redesign of gender pay gap chart using best practices.",
     technologies: ["Tableau", "US Census Data"],
-    image: "/bad-graph.jpeg",
+    image: `${process.env.PUBLIC_URL}/bad-graph.jpeg`,
     repo: "https://github.com/Akhila-kudupudi/Bad-graph-to-good-graph--tableau",
   },
 ];
 
 const Projects = () => (
-  <section id="projects"  className="min-h-screen bg-white text-gray-900 px-8 py-20 rounded-2xl p-10">
+  <section id="projects" className="min-h-screen bg-white text-gray-900 px-8 py-20 rounded-2xl p-10">
     <h2 className="text-4xl font-bold text-blue-700 mb-10 text-center">Projects</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
       {projects.map((project, index) => (
