@@ -15,7 +15,7 @@ const Hero = () => (
   >
     <div className="bg-gray-100 text-gray-900 rounded-xl shadow-lg p-10 max-w-3xl w-full text-center">
       <img
-        src={`${process.env.PUBLIC_URL}/your-photo1.jpg`}
+        src={`${process.env.PUBLIC_URL}/my-photo1.jpg`}
         alt="Akhila Kudupudi"
         className="w-24 h-24 mx-auto rounded-full shadow-md mb-4 object-cover"
       />
