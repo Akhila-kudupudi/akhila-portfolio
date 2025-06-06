@@ -24,7 +24,7 @@ const About = () => (
       {/* Image Section */}
       <div className="md:w-1/3 flex justify-center">
         <img
-          src={`${process.env.PUBLIC_URL}/my_photo.heic`}
+          src={`${process.env.PUBLIC_URL}/my-photo.heic`}
           alt="Akhila Kudupudi"
           className="w-80 h-100 object-cover shadow-lg rounded-xl"
         />
